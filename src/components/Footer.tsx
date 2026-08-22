@@ -57,13 +57,13 @@ export default function Footer() {
       <div className="w-full overflow-hidden border-b border-slate-900 bg-slate-950/50 py-4 mb-8">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6 opacity-75 grayscale hover:grayscale-0 transition-all duration-700">
-            <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/truck.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75" alt="Truck" className="h-12 sm:h-16 w-auto rounded-lg object-cover hover:scale-110 transition-transform shadow-lg" />
+            <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/truck.jpeg?tr=w-1200,f-auto,q-75" alt="Truck" className="h-12 sm:h-16 w-auto rounded-lg object-cover hover:scale-110 transition-transform shadow-lg" />
             <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/bus.jpeg" alt="Bus" className="h-12 sm:h-16 w-auto rounded-lg object-cover hover:scale-110 transition-transform shadow-lg" />
-            <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/ambulance.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75" alt="Ambulance" className="h-12 sm:h-16 w-auto rounded-lg object-cover hover:scale-110 transition-transform shadow-lg" />
-            <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/jcb.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75" alt="JCB" className="h-12 sm:h-16 w-auto rounded-lg object-cover hover:scale-110 transition-transform shadow-lg" />
-            <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/tractor.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75" alt="Tractor" className="h-12 sm:h-16 w-auto rounded-lg object-cover hover:scale-110 transition-transform shadow-lg" />
-            <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/car.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75" alt="Car" className="h-12 sm:h-16 w-auto rounded-lg object-cover hover:scale-110 transition-transform shadow-lg" />
-            <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/footer-truck.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75" alt="Footer Truck" className="h-12 sm:h-16 w-auto rounded-lg object-cover hover:scale-110 transition-transform shadow-lg" />
+            <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/ambulance.jpeg?tr=w-1200,f-auto,q-75" alt="Ambulance" className="h-12 sm:h-16 w-auto rounded-lg object-cover hover:scale-110 transition-transform shadow-lg" />
+            <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/jcb.jpeg?tr=w-1200,f-auto,q-75" alt="JCB" className="h-12 sm:h-16 w-auto rounded-lg object-cover hover:scale-110 transition-transform shadow-lg" />
+            <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/tractor.jpeg?tr=w-1200,f-auto,q-75" alt="Tractor" className="h-12 sm:h-16 w-auto rounded-lg object-cover hover:scale-110 transition-transform shadow-lg" />
+            <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/car.jpeg?tr=w-1200,f-auto,q-75" alt="Car" className="h-12 sm:h-16 w-auto rounded-lg object-cover hover:scale-110 transition-transform shadow-lg" />
+            <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/footer-truck.jpeg?tr=w-1200,f-auto,q-75" alt="Footer Truck" className="h-12 sm:h-16 w-auto rounded-lg object-cover hover:scale-110 transition-transform shadow-lg" />
           </div>
         </div>
       </div>

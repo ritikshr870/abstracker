@@ -4,10 +4,10 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useState, useEffect } from 'react';
 
 const HERO_IMAGES = [
-  "https://ik.imagekit.io/xgxpgvop9/truck.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75", // Truck
+  "https://ik.imagekit.io/xgxpgvop9/truck.jpeg?tr=w-1200,f-auto,q-75", // Truck
   "https://ik.imagekit.io/xgxpgvop9/bus.jpeg?tr=w-1200,f-auto,q-75", // Commercial vehicles
-  "https://ik.imagekit.io/xgxpgvop9/Mining.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75", // Logistics
-  "https://ik.imagekit.io/xgxpgvop9/car.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75"  // Cars/Vans
+  "https://ik.imagekit.io/xgxpgvop9/Mining.jpeg?tr=w-1200,f-auto,q-75", // Logistics
+  "https://ik.imagekit.io/xgxpgvop9/car.jpeg?tr=w-1200,f-auto,q-75"  // Cars/Vans
 ];
 
 export default function Hero() {
@@ -23,19 +23,24 @@ export default function Hero() {
 
   return (
     <section id="home" className="relative pt-[clamp(8rem,15vw,12rem)] pb-[clamp(6rem,10vw,8rem)] overflow-hidden bg-slate-950 min-h-[90vh] flex items-center w-full">
+      {/* Preload first hero image for LCP */}
+      <link rel="preload" href={HERO_IMAGES[0]} as="image" fetchPriority="high" />
+      
       {/* Slider Background */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-slate-950">
         <AnimatePresence mode="popLayout">
           <motion.img
             key={currentImage}
             src={HERO_IMAGES[currentImage]}
-            initial={{ opacity: 0, scale: 1.05 }}
-            animate={{ opacity: 0.5, scale: 1 }}
+            initial={currentImage === 0 ? false : { opacity: 0, scale: 1.05 }}
+            animate={{ opacity: 0.4, scale: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
             alt="Vehicle Background"
             className="absolute inset-0 w-full h-full object-cover"
-            fetchPriority="high"
+            fetchPriority={currentImage === 0 ? "high" : "auto"}
+            loading={currentImage === 0 ? "eager" : "lazy"}
+            decoding={currentImage === 0 ? "sync" : "async"}
           />
         </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/60 to-slate-950"></div>

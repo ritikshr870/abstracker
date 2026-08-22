@@ -32,7 +32,7 @@ export default function ServicesPage() {
         </div>
       </div>
       <div className="w-full">
-        <img fetchPriority="high" width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/truck.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75" alt="Technology background" className="w-full h-auto max-h-[70vh] object-cover" />
+        <img fetchPriority="high" width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/truck.jpeg?tr=w-1200,f-auto,q-75" alt="Technology background" className="w-full h-auto max-h-[70vh] object-cover" />
       </div>
       
       <Products />

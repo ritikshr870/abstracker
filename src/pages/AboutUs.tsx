@@ -41,7 +41,7 @@ export default function AboutUs() {
       </div>
       </div>
       <div className="w-full">
-        <img fetchPriority="high" width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/ambulance.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75" alt="Team working" className="w-full h-auto max-h-[70vh] object-cover" />
+        <img fetchPriority="high" width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/ambulance.jpeg?tr=w-1200,f-auto,q-75" alt="Team working" className="w-full h-auto max-h-[70vh] object-cover" />
       </div>
 
       {/* Metrics Section */}
@@ -81,7 +81,7 @@ export default function AboutUs() {
               transition={{ duration: 0.6 }}
               className="relative h-[600px] rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-slate-100 group"
             >
-              <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/truck.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75" alt="India's Largest GPS Operations Center" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/truck.jpeg?tr=w-1200,f-auto,q-75" alt="India's Largest GPS Operations Center" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
               <div className="absolute bottom-8 left-8 right-8">
                 <div className="bg-white/95 backdrop-blur-md p-6 rounded-2xl shadow-xl">

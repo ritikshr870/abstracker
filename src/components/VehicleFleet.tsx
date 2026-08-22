@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 const vehicles = [
   {
     name: 'Private Cars',
-    image: 'https://ik.imagekit.io/xgxpgvop9/car.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75',
+    image: 'https://ik.imagekit.io/xgxpgvop9/car.jpeg?tr=w-1200,f-auto,q-75',
     desc: 'Remote engine lock, live speed tracking, ignition alerts, and theft protection.',
     badge: 'POPULAR'
   },
@@ -15,25 +15,25 @@ const vehicles = [
   },
   {
     name: 'Ambulances & Emergency',
-    image: 'https://ik.imagekit.io/xgxpgvop9/ambulance.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75',
+    image: 'https://ik.imagekit.io/xgxpgvop9/ambulance.jpeg?tr=w-1200,f-auto,q-75',
     desc: 'Critical emergency response tracking with real-time routing, siren alerts, and zero-delay tracking.',
     badge: 'EMERGENCY'
   },
   {
     name: 'JCB & Construction Machinery',
-    image: 'https://ik.imagekit.io/xgxpgvop9/jcb.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75',
+    image: 'https://ik.imagekit.io/xgxpgvop9/jcb.jpeg?tr=w-1200,f-auto,q-75',
     desc: 'Engine runtime hours, work site geofencing, and battery disconnection alerts.',
     badge: 'HEAVY DUTY'
   },
   {
     name: 'Rental Cars & Cargo Containers',
-    image: 'https://ik.imagekit.io/xgxpgvop9/truck.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75',
+    image: 'https://ik.imagekit.io/xgxpgvop9/truck.jpeg?tr=w-1200,f-auto,q-75',
     desc: 'Zero-wiring magnetic trackers with long standby battery life.',
     badge: 'MAGNETIC'
   },
   {
     name: 'Tractors & Farm Equipment',
-    image: 'https://ik.imagekit.io/xgxpgvop9/tractor.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75',
+    image: 'https://ik.imagekit.io/xgxpgvop9/tractor.jpeg?tr=w-1200,f-auto,q-75',
     desc: 'Field runtime tracking, acreage movement alerts, and anti-theft immobilization.',
     badge: 'RUGGED'
   }

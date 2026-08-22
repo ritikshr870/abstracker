@@ -72,7 +72,7 @@ export default function LiveAppPreview() {
           {/* Extremely Realistic Google Map Tile Background */}
           <div className="absolute inset-0 z-0">
              <img width="800" height="600"  loading="lazy" 
-               src="https://ik.imagekit.io/xgxpgvop9/car.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75" 
+               src="https://ik.imagekit.io/xgxpgvop9/car.jpeg?tr=w-1200,f-auto,q-75" 
                alt="Map" 
                className="w-full h-[150%] object-cover object-top contrast-[1.1] saturate-50 opacity-90 -translate-y-10" 
              />

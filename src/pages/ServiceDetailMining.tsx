@@ -9,7 +9,7 @@ export default function ServiceDetailMining() {
       {/* Animated Hero Section */}
       <div className="relative bg-slate-950 pt-32 pb-24 text-center px-4 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-40">
-          <img fetchPriority="high" width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/jcb.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75" alt="JCB Excavator Mining Equipment" className="w-full h-full object-cover object-center filter brightness-75" />
+          <img fetchPriority="high" width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/jcb.jpeg?tr=w-1200,f-auto,q-75" alt="JCB Excavator Mining Equipment" className="w-full h-full object-cover object-center filter brightness-75" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/90 to-slate-900/50 z-10"></div>
         
@@ -79,7 +79,7 @@ export default function ServiceDetailMining() {
               transition={{ duration: 0.6 }}
               className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-slate-100 h-[600px]"
             >
-               <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/Mining.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75" alt="Heavy Crane Machinery" className="w-full h-full object-cover" />
+               <img width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/Mining.jpeg?tr=w-1200,f-auto,q-75" alt="Heavy Crane Machinery" className="w-full h-full object-cover" />
                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent"></div>
                
                <div className="absolute bottom-8 left-8 right-8">

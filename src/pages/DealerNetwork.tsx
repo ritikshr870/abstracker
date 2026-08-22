@@ -325,7 +325,7 @@ export default function DealerNetwork() {
       </section>
 
       {/* Main Directory Container */}
-      <section className="pb-24 relative overflow-hidden">
+      <section className="pb-24 relative overflow-hidden min-h-[1200px]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-20">
 
           {/* 1. TOP METRO HUBS (Shown if All or Metros selected or query matches) */}

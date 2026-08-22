@@ -11,7 +11,7 @@ export default function ServiceDetailPrivate() {
       {/* Animated Hero Section */}
       <div className="relative bg-slate-900 pt-32 pb-24 text-center px-4 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-40 mix-blend-overlay">
-          <img fetchPriority="high" width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/car.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75" alt="Private Car" className="w-full h-full object-cover object-center filter brightness-75" />
+          <img fetchPriority="high" width="800" height="600"  loading="lazy" src="https://ik.imagekit.io/xgxpgvop9/car.jpeg?tr=w-1200,f-auto,q-75" alt="Private Car" className="w-full h-full object-cover object-center filter brightness-75" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-slate-900/40 z-10"></div>
         

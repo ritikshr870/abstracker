@@ -8,9 +8,9 @@ const ADMIN_EMAILS = ['ritikshr864@gmail.com', 'shrdevlopers@gmail.com'];
 
 const BACKGROUND_IMAGES = [
   'https://ik.imagekit.io/xgxpgvop9/footer-truck.jpeg?updatedAt=178679575617&tr=w-1200,f-auto,q-757&tr=w-1200,f-auto,q-75',
-  'https://ik.imagekit.io/xgxpgvop9/ambulance.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75',
-  'https://ik.imagekit.io/xgxpgvop9/truck.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75',
-  'https://ik.imagekit.io/xgxpgvop9/car.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75'
+  'https://ik.imagekit.io/xgxpgvop9/ambulance.jpeg?tr=w-1200,f-auto,q-75',
+  'https://ik.imagekit.io/xgxpgvop9/truck.jpeg?tr=w-1200,f-auto,q-75',
+  'https://ik.imagekit.io/xgxpgvop9/car.jpeg?tr=w-1200,f-auto,q-75'
 ];
 
 function getAuthErrorMessage(error: any): string {

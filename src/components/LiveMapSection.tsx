@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { MapPin, Navigation, Signal, Zap } from 'lucide-react';
 import { motion, useInView } from 'motion/react';
 
+import React from "react";
+
 export default function LiveMapSection() {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true, margin: '200px' });
@@ -28,7 +30,7 @@ export default function LiveMapSection() {
     <section className="py-24 bg-slate-950 relative overflow-hidden">
       {/* Background Stylized Map Pattern */}
       <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
-      <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/xgxpgvop9/truck.jpeg?tr=w-1200,f-auto,q-75?tr=w-1200,f-auto,q-75')] opacity-10 bg-cover bg-center mix-blend-screen grayscale"></div>
+      <div className="absolute inset-0 bg-[url('https://ik.imagekit.io/xgxpgvop9/truck.jpeg?tr=w-1200,f-auto,q-75')] opacity-10 bg-cover bg-center mix-blend-screen grayscale"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
