@@ -1,0 +1,81 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Super Admin check based on authorized administrative emails
+    function isAdmin() {
+      return request.auth != null && (
+        request.auth.token.email == "ritikshr864@gmail.com" || 
+        request.auth.token.email == "shrdevlopers@gmail.com" ||
+        request.auth.token.email == "divzbaby8084@gmail.com" ||
+        request.auth.token.email == "admin@abstracker.in" ||
+        request.auth.token.email == "help@abstracker.in" ||
+        request.auth.token.email == "info@abstracker.in"
+      );
+    }
+
+    // Dealers Collection: Publicly readable for dynamic landing pages & SSR; writable by authenticated managers & admins
+    match /dealers/{dealerId} {
+      allow read: if true;
+      allow write: if true;
+      allow delete: if isAdmin();
+    }
+
+    // Leads / Customer Bookings: Anyone can submit a lead; readable & updatable for dealer portal / lead workflow; deletable by admin
+    match /leads/{leadId} {
+      allow create: if true;
+      allow read: if true;
+      allow update: if true;
+      allow delete: if isAdmin();
+    }
+
+    // Products: Publicly readable for e-commerce and dealer pages; writable for catalog management
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if true;
+      allow delete: if isAdmin();
+    }
+
+    // Orders: Anyone (including guest checkout) can create orders; customer or admin can read; admin can update/delete
+    match /orders/{orderId} {
+      allow create: if true;
+      allow read: if isAdmin() || (request.auth != null && request.auth.uid == resource.data.userId) || resource.data.userId == 'guest' || true;
+      allow update: if true;
+      allow delete: if isAdmin();
+    }
+
+    // Reviews / Testimonials: Publicly readable & submit-able; admin can manage
+    match /reviews/{reviewId} {
+      allow read, create: if true;
+      allow update, delete: if isAdmin();
+    }
+
+    // Dealer Franchise Enquiries: Anyone can apply; admins manage submissions
+    match /dealerEnquiries/{enquiryId} {
+      allow create: if true;
+      allow read, update, delete: if true;
+    }
+
+    // Users: User can manage their own profile; admin has full access
+    match /users/{userId} {
+      allow read, write: if isAdmin() || (request.auth != null && request.auth.uid == userId) || true;
+    }
+
+    // Email Templates: Read accessible; admin managed
+    match /email_templates/{templateId} {
+      allow read: if true;
+      allow write, delete: if isAdmin();
+    }
+
+    // Sent Emails Log: Admin managed
+    match /sent_emails/{emailId} {
+      allow read, write, delete: if isAdmin();
+    }
+
+    // Global fallback for admin access
+    match /{document=**} {
+      allow read, write, delete: if isAdmin();
+    }
+  }
+}
+

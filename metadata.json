@@ -1,0 +1,8 @@
+{
+  "name": "Abstracker  mail update",
+  "description": "Bihar\u0027s Most Trusted AIS-140 GPS Solutions | Complete Compliance. Complete Safety.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

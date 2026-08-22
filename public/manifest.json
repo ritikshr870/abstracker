@@ -1,0 +1,58 @@
+{
+  "name": "AbsTracker - GPS & AIS 140 VLTD",
+  "short_name": "AbsTracker",
+  "description": "India's Best GPS Tracker for Car, Bike & Commercial Vehicles. Govt certified AIS-140 GPS & Fleet Management.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#020617",
+  "theme_color": "#020617",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "categories": ["business", "navigation", "utilities", "productivity"],
+  "icons": [
+    {
+      "src": "/favicon.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Track Vehicle Live",
+      "short_name": "Live Tracking",
+      "description": "Experience real-time GPS tracking demo",
+      "url": "/tracking-demo",
+      "icons": [{ "src": "/favicon.jpg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Browse GPS Products",
+      "short_name": "Products",
+      "description": "Explore AIS 140 and anti-theft GPS devices",
+      "url": "/products",
+      "icons": [{ "src": "/favicon.jpg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Find Local Dealer",
+      "short_name": "Dealers",
+      "description": "Locate authorized GPS installers near you",
+      "url": "/dealer-network",
+      "icons": [{ "src": "/favicon.jpg", "sizes": "192x192" }]
+    },
+    {
+      "name": "24/7 Support",
+      "short_name": "Support",
+      "description": "Contact AbsTracker customer care",
+      "url": "/contact",
+      "icons": [{ "src": "/favicon.jpg", "sizes": "192x192" }]
+    }
+  ]
+}

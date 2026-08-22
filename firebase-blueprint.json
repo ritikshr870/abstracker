@@ -1,0 +1,197 @@
+{
+  "entities": {
+    "Dealer": {
+      "title": "Dealer",
+      "description": "Authorized AbsTracker Franchise & District Dealer Profile",
+      "type": "object",
+      "properties": {
+        "brandName": { "type": "string", "description": "Brand or dealer display title" },
+        "contactName": { "type": "string", "description": "Primary contact person or representative" },
+        "phone": { "type": "string", "description": "Primary telephone / mobile number" },
+        "email": { "type": "string", "description": "Official dealer email address" },
+        "address": { "type": "string", "description": "Physical workshop or branch address" },
+        "city": { "type": "string", "description": "City or district location" },
+        "state": { "type": "string", "description": "State or union territory in India" },
+        "websiteSlug": { "type": "string", "description": "Custom URL subdomain or district slug" },
+        "seoTitle": { "type": "string", "description": "Custom Meta Title tag for SEO & WhatsApp preview" },
+        "seoDescription": { "type": "string", "description": "Custom Meta Description tag for search engines" },
+        "ogImage": { "type": "string", "description": "Custom Open Graph link preview banner image URL" },
+        "imageUrl": { "type": "string", "description": "Hero banner or showroom image URL" },
+        "dealerLogoUrl": { "type": "string", "description": "Dealer logo image URL" },
+        "services": { "type": "string", "description": "Offered GPS services list" },
+        "features": { "type": "string", "description": "Dealer highlight features" },
+        "businessHours": { "type": "string", "description": "Operating hours" },
+        "pricingStartingAt": { "type": "string", "description": "Starting package price display" },
+        "templateId": { "type": "string", "description": "Landing page template style identifier" },
+        "themeColor": { "type": "string", "description": "Primary accent brand color hex code" },
+        "loginEmail": { "type": "string", "description": "Email used for dealer portal credentials" },
+        "loginPassword": { "type": "string", "description": "Password used for dealer portal credentials" },
+        "updatedAt": { "type": "string", "description": "ISO timestamp of last modification" }
+      },
+      "required": ["phone", "city"]
+    },
+    "Lead": {
+      "title": "Lead",
+      "description": "Customer Booking & Inquiry Submission",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Customer full name or organization" },
+        "phone": { "type": "string", "description": "Customer contact phone number" },
+        "vehicle": { "type": "string", "description": "Vehicle type for GPS installation" },
+        "message": { "type": "string", "description": "Optional customer request details" },
+        "dealerId": { "type": "string", "description": "Target dealer identifier or slug" },
+        "dealerDocId": { "type": "string", "description": "Target dealer Firestore document ID" },
+        "dealerSlug": { "type": "string", "description": "Target dealer URL slug" },
+        "dealerName": { "type": "string", "description": "Target dealer business name" },
+        "dealerCity": { "type": "string", "description": "Target dealer branch city" },
+        "source": { "type": "string", "description": "Source of inquiry: main_website or dealer_page" },
+        "status": { "type": "string", "description": "Lead status: new, contacted, converted, closed" },
+        "createdAt": { "type": "string", "description": "ISO timestamp of form submission" }
+      },
+      "required": ["name", "phone", "vehicle", "createdAt"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "GPS Tracker Hardware & Accessory Item",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "description": "Product title" },
+        "name": { "type": "string", "description": "Product name" },
+        "price": { "type": "number", "description": "Selling price in INR" },
+        "originalPrice": { "type": "number", "description": "MRP or strike-through price in INR" },
+        "description": { "type": "string", "description": "Product feature details" },
+        "category": { "type": "string", "description": "Product category" },
+        "imageUrl": { "type": "string", "description": "Product photo URL" },
+        "dealerId": { "type": "string", "description": "Specific dealer ID if local custom product" },
+        "createdAt": { "type": "string", "description": "ISO timestamp of product addition" }
+      },
+      "required": ["title", "price"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Customer Online E-Commerce Order",
+      "type": "object",
+      "properties": {
+        "customerName": { "type": "string", "description": "Purchaser full name" },
+        "customerEmail": { "type": "string", "description": "Purchaser email address" },
+        "customerPhone": { "type": "string", "description": "Purchaser contact phone number" },
+        "address": { "type": "string", "description": "Delivery street address" },
+        "city": { "type": "string", "description": "Delivery city" },
+        "state": { "type": "string", "description": "Delivery state" },
+        "pincode": { "type": "string", "description": "Postal pincode" },
+        "totalAmount": { "type": "number", "description": "Total order amount in INR" },
+        "items": { "type": "string", "description": "JSON array string or items list" },
+        "status": { "type": "string", "description": "Order fulfillment status" },
+        "userId": { "type": "string", "description": "Authenticated user UID or guest" },
+        "createdAt": { "type": "string", "description": "ISO timestamp of order placement" }
+      },
+      "required": ["customerName", "customerPhone", "totalAmount", "createdAt"]
+    },
+    "Review": {
+      "title": "Review",
+      "description": "Customer Testimonial & Rating",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Reviewer name" },
+        "rating": { "type": "number", "description": "Star rating 1 to 5" },
+        "comment": { "type": "string", "description": "Review message text" },
+        "location": { "type": "string", "description": "Reviewer city or fleet size" },
+        "dealerId": { "type": "string", "description": "Specific dealer ID if dealer-level review" },
+        "createdAt": { "type": "string", "description": "ISO timestamp of review submission" }
+      },
+      "required": ["name", "rating", "comment"]
+    },
+    "DealerEnquiry": {
+      "title": "DealerEnquiry",
+      "description": "Prospective Franchise & Dealership Application",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Applicant full name" },
+        "email": { "type": "string", "description": "Applicant email address" },
+        "phone": { "type": "string", "description": "Applicant mobile phone number" },
+        "city": { "type": "string", "description": "Proposed dealership city" },
+        "state": { "type": "string", "description": "Proposed dealership state" },
+        "experience": { "type": "string", "description": "Prior business experience" },
+        "investmentBudget": { "type": "string", "description": "Planned initial investment" },
+        "message": { "type": "string", "description": "Additional applicant note" },
+        "createdAt": { "type": "string", "description": "ISO timestamp of enquiry submission" }
+      },
+      "required": ["name", "phone", "city", "state"]
+    },
+    "EmailTemplate": {
+      "title": "EmailTemplate",
+      "description": "Pre-formatted Email Notification Template",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Template key or name" },
+        "subject": { "type": "string", "description": "Email subject line" },
+        "body": { "type": "string", "description": "Email HTML or text template content" },
+        "updatedAt": { "type": "string", "description": "ISO timestamp of last update" }
+      },
+      "required": ["name", "subject", "body"]
+    },
+    "SentEmail": {
+      "title": "SentEmail",
+      "description": "Outbound Email Dispatch Record",
+      "type": "object",
+      "properties": {
+        "to": { "type": "string", "description": "Recipient email address" },
+        "subject": { "type": "string", "description": "Sent subject line" },
+        "body": { "type": "string", "description": "Sent email content" },
+        "status": { "type": "string", "description": "Delivery status" },
+        "sentAt": { "type": "string", "description": "ISO timestamp of dispatch" }
+      },
+      "required": ["to", "subject", "sentAt"]
+    },
+    "User": {
+      "title": "User",
+      "description": "Registered User Profile",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "description": "User email address" },
+        "displayName": { "type": "string", "description": "User full display name" },
+        "role": { "type": "string", "description": "User role: super_admin, dealer, or customer" },
+        "createdAt": { "type": "string", "description": "ISO timestamp of account creation" }
+      },
+      "required": ["email"]
+    }
+  },
+  "firestore": {
+    "/dealers/{dealerId}": {
+      "schema": "#/entities/Dealer",
+      "description": "Franchise and district dealer landing pages and settings"
+    },
+    "/leads/{leadId}": {
+      "schema": "#/entities/Lead",
+      "description": "Customer booking inquiries from main website and dealer branch pages"
+    },
+    "/products/{productId}": {
+      "schema": "#/entities/Product",
+      "description": "GPS tracking hardware items and dealer local listings"
+    },
+    "/orders/{orderId}": {
+      "schema": "#/entities/Order",
+      "description": "Online customer e-commerce orders and tracking"
+    },
+    "/reviews/{reviewId}": {
+      "schema": "#/entities/Review",
+      "description": "Customer ratings and feedback"
+    },
+    "/dealerEnquiries/{enquiryId}": {
+      "schema": "#/entities/DealerEnquiry",
+      "description": "Applications to become an authorized AbsTracker dealer"
+    },
+    "/email_templates/{templateId}": {
+      "schema": "#/entities/EmailTemplate",
+      "description": "Automated transactional email message templates"
+    },
+    "/sent_emails/{emailId}": {
+      "schema": "#/entities/SentEmail",
+      "description": "Audit trail log of outgoing emails"
+    },
+    "/users/{userId}": {
+      "schema": "#/entities/User",
+      "description": "User account profiles and administrative privileges"
+    }
+  }
+}

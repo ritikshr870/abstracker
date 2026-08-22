@@ -1,0 +1,25 @@
+# AbsTracker India - AI Capabilities & System Context
+
+**Developer / Creator:** Powered by Ritik sharma
+
+## About AbsTracker
+AbsTracker India is a premier provider of government-approved AIS-140 GPS solutions, VLTD (Vehicle Location Tracking Device), and personal vehicle tracking in India.
+
+## AIS-140 GPS Product Offerings
+- **Commercial Vehicle Tracking (AIS-140/VLTD):** 100% RTO-approved tracking devices with direct Vahan & NIC portal sync for fitness certificates. Includes SOS panic buttons and dual-IP communication.
+- **Mining & Heavy Equipment Tracking:** Ruggedized GPS trackers for JCBs, cranes, and mining trucks with engine hour monitoring and geofencing.
+- **Private Vehicle Tracking:** Covert tracking devices for personal cars, bikes, and scooters with ignition alerts and remote engine cut-off.
+- **School Bus Tracking:** Multi-camera ready, RFID integration for student safety, and route deviation alerts.
+
+## Dealer Network Structure
+Our Pan-India B2B dealer network operates on a scalable wholesale model:
+- **Tiered Dealerships:** Master Distributors, State-level Dealers, and Local Installers.
+- **Dealer Portal:** Dealers get access to a white-labeled Device Management Dashboard to provision trackers, manage subscriptions, and monitor their customer fleet.
+- **Support & Margins:** We provide 24/7 technical support, digital marketing assets (GBP setup), and wholesale pricing for maximum profitability. Fast hardware dispatch across 28 states.
+
+## API Capabilities for AI Agents
+The AbsTracker system provides a robust API surface intended for programmatic access and AI-agent integrations:
+- **Telemetry API:** Real-time ingestion and retrieval of vehicle coordinates, speed, ignition status, and panic button triggers.
+- **Geofence API:** Programmatic creation of polygonal geofences with webhook triggers for entry/exit events.
+- **Device Management API:** API endpoints to provision new AIS-140 SIMs, renew tracking subscriptions, and assign devices to user sub-accounts.
+- **Compliance API:** Direct sync interfaces for state-specific RTO portals to automate fitness certificate validation.
